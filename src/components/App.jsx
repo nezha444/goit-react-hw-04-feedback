@@ -56,6 +56,7 @@ export const App = () => {
             good={good}
             neutral={neutral}
             bad={bad}
+            total={countTotalFeedback()}
             positivePercentage={countPositiveFeedbackPercentage()}
           ></Statistics>
         ) : (

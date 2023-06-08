@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
@@ -16,4 +16,8 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
       ))}
     </ul>
   );
+};
+FeedbackOptions.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
 };
